@@ -6,7 +6,7 @@ class NavTab(ft.Tabs):
         super().__init__(
             selected_index=1,
             animation_duration=300,
-            # scrollable=False,
+            scrollable=False,
             tabs=[
                 ft.Tab(
                     text=tab.get('text', "未知"),

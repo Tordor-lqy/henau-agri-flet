@@ -7,6 +7,14 @@ nav_tab_config = {
         {
             "text": "服务",
             "page": "service"
+        },
+        {
+            "text": "AI",
+            "page": "agent"
+        },
+        {
+            "text": "频道",
+            "page": "channel"
         }
     ]
 }
