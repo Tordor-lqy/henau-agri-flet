@@ -2,7 +2,7 @@ import flet as ft
 from layout import pages
 
 navigation_bar_index = [
-    "home", "service", "home", "home"
+    "home", "service", "home", "mine"
 ]
 
 page_content = ft.SafeArea(
@@ -10,6 +10,7 @@ page_content = ft.SafeArea(
     expand=1,
     content=pages[navigation_bar_index[0]]
 )
+flet_theme = ft.Theme(color_scheme_seed=ft.Colors.GREEN_900)
 
 def main(page: ft.Page):
     global page_content
@@ -24,7 +25,7 @@ def main(page: ft.Page):
             page_content.content = pages["not_found"]
             page.update()
 
-    page.theme = ft.Theme(color_scheme_seed=ft.Colors.GREEN_900)
+    page.theme = flet_theme
     page.title = "农大生活"
     page.navigation_bar = ft.NavigationBar(
         adaptive=True,
