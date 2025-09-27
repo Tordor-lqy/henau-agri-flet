@@ -11,4 +11,5 @@ dependencies = [
 [dependency-groups]
 dev = [
     "flet[all]==0.28.3",
+    "pyinstaller>=6.16.0",
 ]
